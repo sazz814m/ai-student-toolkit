@@ -3,101 +3,227 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>MD SAZZAD HOSSAIN SIAM</title>
 
 <style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
 body{
-    margin:0;
-    font-family:Arial, sans-serif;
-    background:#0f172a;
-    color:white;
-    text-align:center;
+font-family:Arial, sans-serif;
+background:linear-gradient(-45deg,#0f172a,#111827,#1e293b,#020617);
+background-size:400% 400%;
+animation:bg 10s ease infinite;
+color:white;
+}
+
+@keyframes bg{
+0%{background-position:0% 50%;}
+50%{background-position:100% 50%;}
+100%{background-position:0% 50%;}
+}
+
+.container{
+max-width:1100px;
+margin:auto;
+padding:40px 20px;
 }
 
 .hero{
-    padding:80px 20px;
+text-align:center;
+padding:80px 20px;
 }
 
-h1{
-    font-size:50px;
-    margin-bottom:10px;
+.hero img{
+width:160px;
+height:160px;
+border-radius:50%;
+border:4px solid #38bdf8;
+margin-bottom:20px;
 }
 
-p{
-    color:#cbd5e1;
-    font-size:18px;
+.hero h1{
+font-size:52px;
+margin-bottom:10px;
+}
+
+.hero p{
+font-size:20px;
+color:#cbd5e1;
+}
+
+.button{
+display:inline-block;
+margin-top:25px;
+padding:12px 24px;
+background:#38bdf8;
+color:#000;
+text-decoration:none;
+font-weight:bold;
+border-radius:10px;
+transition:0.3s;
+}
+
+.button:hover{
+transform:scale(1.05);
+}
+
+.section-title{
+font-size:36px;
+margin:50px 0 20px;
+text-align:center;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
 }
 
 .card{
-    background:#1e293b;
-    margin:20px auto;
-    padding:25px;
-    border-radius:15px;
-    max-width:700px;
+background:#1e293b;
+padding:25px;
+border-radius:16px;
+transition:0.3s;
 }
 
-a{
-    display:block;
-    color:#38bdf8;
-    margin:10px;
-    text-decoration:none;
-    font-size:18px;
+.card:hover{
+transform:translateY(-8px);
+}
+
+.card h3{
+margin-bottom:10px;
+color:#38bdf8;
+}
+
+.skills span{
+display:inline-block;
+background:#0f172a;
+padding:8px 14px;
+margin:8px;
+border-radius:8px;
 }
 
 .footer{
-    margin-top:40px;
-    padding:20px;
-    color:#94a3b8;
+text-align:center;
+padding:40px;
+color:#94a3b8;
 }
+
+.social a{
+display:inline-block;
+margin:10px;
+color:#38bdf8;
+text-decoration:none;
+font-size:18px;
+}
+
 </style>
 </head>
 
 <body>
 
+<div class="container">
+
 <div class="hero">
+
+<img src="https://avatars.githubusercontent.com/u/9919?s=200&v=4">
+
 <h1>MD SAZZAD HOSSAIN SIAM</h1>
 
 <p>
-CSE Student | Founder of RAY | Tech Enthusiast |
-AI & Cybersecurity Learner
+CSE Student • Founder of RAY • Tech Enthusiast • AI & Cybersecurity Learner
+</p>
+
+<a class="button" href="https://github.com/sazz814m">
+Visit My GitHub
+</a>
+
+</div>
+
+<h2 class="section-title">About Me</h2>
+
+<div class="card">
+<p>
+Passionate about technology, innovation, startups,
+AI, cybersecurity, and leadership.
+Focused on building impactful solutions and helping communities through technology.
 </p>
 </div>
 
+<h2 class="section-title">Skills</h2>
+
+<div class="card skills">
+
+<span>Artificial Intelligence</span>
+<span>Cybersecurity</span>
+<span>Cloud Learning</span>
+<span>GitHub</span>
+<span>Programming</span>
+<span>Leadership</span>
+<span>Public Speaking</span>
+<span>Startup Thinking</span>
+
+</div>
+
+<h2 class="section-title">Achievements</h2>
+
+<div class="grid">
+
 <div class="card">
-<h2>My Platforms</h2>
+<h3>Microsoft Learn</h3>
+<p>Level 5 Profile with multiple badges and trophies.</p>
+</div>
+
+<div class="card">
+<h3>IBM Certifications</h3>
+<p>Open Source Foundations & Open Source Learning.</p>
+</div>
+
+<div class="card">
+<h3>HP LIFE Ambassador</h3>
+<p>Certified in Data Science, Cybersecurity & Agile.</p>
+</div>
+
+</div>
+
+<h2 class="section-title">Projects</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>AI Student Toolkit</h3>
+<p>A modern student productivity and AI resources platform.</p>
+</div>
+
+<div class="card">
+<h3>RAY Community</h3>
+<p>Youth-focused initiative helping students and society.</p>
+</div>
+
+</div>
+
+<h2 class="section-title">Connect</h2>
+
+<div class="social" style="text-align:center;">
 
 <a href="https://github.com/sazz814m">GitHub</a>
+
 <a href="https://learn.microsoft.com">Microsoft Learn</a>
-<a href="https://www.linkedin.com">LinkedIn</a>
-<a href="https://www.notion.so">Notion</a>
 
-</div>
-
-<div class="card">
-<h2>About Me</h2>
-
-<p>
-Passionate about technology, startups,
-community leadership, AI, cybersecurity,
-and innovation.
-</p>
-
-</div>
-
-<div class="card">
-<h2>Achievements</h2>
-
-<p>
-✔ Microsoft Learn Level 5<br>
-✔ IBM Open Source Certifications<br>
-✔ HP LIFE Ambassador<br>
-✔ Founder of Rising Ambition for Youth (RAY)
-</p>
+<a href="https://linkedin.com">LinkedIn</a>
 
 </div>
 
 <div class="footer">
-Made by MD SAZZAD HOSSAIN SIAM
+© 2026 MD SAZZAD HOSSAIN SIAM
+</div>
+
 </div>
 
 </body>
